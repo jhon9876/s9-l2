@@ -9,7 +9,7 @@ class AllTheBooks extends Component {
         <Row className="gx-5 gy-5">
           {books.map((libro) => {
             return (
-              <Col lg={4}>
+              <Col key={libro.asin} lg={4}>
                 <Card style={{ width: "18rem" }}>
                   <Card.Img variant="top" src={libro.img} />
                   <Card.Body>
